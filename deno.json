@@ -1,0 +1,5 @@
+{
+  "fmt": {
+    "exclude": [".next", "build", "node_modules"]
+  }
+}
