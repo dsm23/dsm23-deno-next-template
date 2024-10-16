@@ -1,5 +1,8 @@
 {
   "fmt": {
     "exclude": [".next", "build", "node_modules"]
+  },
+  "imports": {
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.2"
   }
 }

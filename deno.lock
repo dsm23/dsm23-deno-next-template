@@ -1,6 +1,8 @@
 {
   "version": "4",
   "specifiers": {
+    "jsr:@std/dotenv@*": "0.225.2",
+    "jsr:@std/dotenv@~0.225.2": "0.225.2",
     "npm:@commitlint/cli@^19.4.0": "19.5.0_typescript@5.6.3",
     "npm:@commitlint/config-conventional@^19.2.2": "19.5.0",
     "npm:@commitlint/types@^19.5.0": "19.5.0",
@@ -9,12 +11,18 @@
     "npm:@types/react@^18.3.11": "18.3.11",
     "npm:commitizen@^4.3.1": "4.3.1_typescript@5.6.3",
     "npm:cz-conventional-changelog@^3.3.0": "3.3.0_typescript@5.6.3",
+    "npm:husky@^9.1.6": "9.1.6",
     "npm:next@14.2.15": "14.2.15_react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:postcss@8": "8.4.47",
     "npm:react-dom@18": "18.3.1_react@18.3.1",
     "npm:react@18": "18.3.1",
     "npm:tailwindcss@^3.4.14": "3.4.14_postcss@8.4.47",
     "npm:typescript@^5.6.3": "5.6.3"
+  },
+  "jsr": {
+    "@std/dotenv@0.225.2": {
+      "integrity": "e2025dce4de6c7bca21dece8baddd4262b09d5187217e231b033e088e0c4dd23"
+    }
   },
   "npm": {
     "@alloc/quick-lru@5.2.0": {
@@ -852,6 +860,9 @@
         "parse-passwd"
       ]
     },
+    "husky@9.1.6": {
+      "integrity": "sha512-sqbjZKK7kf44hfdE94EoX8MZNk0n7HeW37O4YrVGCF4wzgQjp+akPAkfUK5LZ6KuR/6sqeAVuXHji+RzQgOn5A=="
+    },
     "iconv-lite@0.4.24": {
       "integrity": "sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==",
       "dependencies": [
@@ -1651,6 +1662,9 @@
     }
   },
   "workspace": {
+    "dependencies": [
+      "jsr:@std/dotenv@~0.225.2"
+    ],
     "packageJson": {
       "dependencies": [
         "npm:@commitlint/cli@^19.4.0",
@@ -1661,6 +1675,7 @@
         "npm:@types/react@^18.3.11",
         "npm:commitizen@^4.3.1",
         "npm:cz-conventional-changelog@^3.3.0",
+        "npm:husky@^9.1.6",
         "npm:next@14.2.15",
         "npm:postcss@8",
         "npm:react-dom@18",
