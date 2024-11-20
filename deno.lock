@@ -1,21 +1,22 @@
 {
   "version": "4",
   "specifiers": {
-    "npm:@commitlint/cli@^19.4.0": "19.5.0_typescript@5.6.3",
-    "npm:@commitlint/config-conventional@^19.2.2": "19.5.0",
+    "npm:@commitlint/cli@^19.6.0": "19.6.0_typescript@5.6.3",
+    "npm:@commitlint/config-conventional@^19.6.0": "19.6.0",
     "npm:@commitlint/types@^19.5.0": "19.5.0",
-    "npm:@types/node@^22.7.5": "22.7.5",
+    "npm:@types/node@^22.9.1": "22.9.1",
     "npm:@types/react-dom@^18.3.1": "18.3.1",
     "npm:@types/react@^18.3.11": "18.3.11",
+    "npm:@types/react@^18.3.12": "18.3.12",
     "npm:commitizen@^4.3.1": "4.3.1_typescript@5.6.3",
     "npm:cz-conventional-changelog@^3.3.0": "3.3.0_typescript@5.6.3",
-    "npm:husky@^9.1.6": "9.1.6",
+    "npm:husky@^9.1.7": "9.1.7",
     "npm:lint-staged@^15.2.10": "15.2.10",
     "npm:next@14.2.15": "14.2.15_react@18.3.1_react-dom@18.3.1__react@18.3.1",
-    "npm:postcss@8": "8.4.47",
+    "npm:postcss@^8.4.49": "8.4.49",
     "npm:react-dom@18": "18.3.1_react@18.3.1",
     "npm:react@18": "18.3.1",
-    "npm:tailwindcss@^3.4.14": "3.4.14_postcss@8.4.47",
+    "npm:tailwindcss@^3.4.15": "3.4.15_postcss@8.4.49",
     "npm:typescript@^5.6.3": "5.6.3"
   },
   "npm": {
@@ -26,7 +27,7 @@
       "integrity": "sha512-0xZJFNE5XMpENsgfHYTw8FbX4kv53mFLn2i3XPoq69LyhYSCBJtitaHx9QnsVTrsogI4Z3+HtEfZ2/GFPOtf5g==",
       "dependencies": [
         "@babel/highlight",
-        "picocolors"
+        "picocolors@1.1.0"
       ]
     },
     "@babel/helper-validator-identifier@7.25.7": {
@@ -38,11 +39,11 @@
         "@babel/helper-validator-identifier",
         "chalk@2.4.2",
         "js-tokens",
-        "picocolors"
+        "picocolors@1.1.0"
       ]
     },
-    "@commitlint/cli@19.5.0_typescript@5.6.3": {
-      "integrity": "sha512-gaGqSliGwB86MDmAAKAtV9SV1SHdmN8pnGq4EJU4+hLisQ7IFfx4jvU4s+pk6tl0+9bv6yT+CaZkufOinkSJIQ==",
+    "@commitlint/cli@19.6.0_typescript@5.6.3": {
+      "integrity": "sha512-v17BgGD9w5KnthaKxXnEg6KLq6DYiAxyiN44TpiRtqyW8NSq+Kx99mkEG8Qo6uu6cI5eMzMojW2muJxjmPnF8w==",
       "dependencies": [
         "@commitlint/format",
         "@commitlint/lint",
@@ -53,8 +54,8 @@
         "yargs"
       ]
     },
-    "@commitlint/config-conventional@19.5.0": {
-      "integrity": "sha512-OBhdtJyHNPryZKg0fFpZNOBM1ZDbntMvqMuSmpfyP86XSfwzGw4CaoYRG4RutUPg0BTK07VMRIkNJT6wi2zthg==",
+    "@commitlint/config-conventional@19.6.0": {
+      "integrity": "sha512-DJT40iMnTYtBtUfw9ApbsLZFke1zKh6llITVJ+x9mtpHD08gsNXaIRqHTmwTZL3dNX5+WoyK7pCN/5zswvkBCQ==",
       "dependencies": [
         "@commitlint/types",
         "conventional-changelog-conventionalcommits"
@@ -88,15 +89,15 @@
         "chalk@5.3.0"
       ]
     },
-    "@commitlint/is-ignored@19.5.0": {
-      "integrity": "sha512-0XQ7Llsf9iL/ANtwyZ6G0NGp5Y3EQ8eDQSxv/SRcfJ0awlBY4tHFAvwWbw66FVUaWICH7iE5en+FD9TQsokZ5w==",
+    "@commitlint/is-ignored@19.6.0": {
+      "integrity": "sha512-Ov6iBgxJQFR9koOupDPHvcHU9keFupDgtB3lObdEZDroiG4jj1rzky60fbQozFKVYRTUdrBGICHG0YVmRuAJmw==",
       "dependencies": [
         "@commitlint/types",
         "semver"
       ]
     },
-    "@commitlint/lint@19.5.0": {
-      "integrity": "sha512-cAAQwJcRtiBxQWO0eprrAbOurtJz8U6MgYqLz+p9kLElirzSCc0vGMcyCaA1O7AqBuxo11l1XsY3FhOFowLAAg==",
+    "@commitlint/lint@19.6.0": {
+      "integrity": "sha512-LRo7zDkXtcIrpco9RnfhOKeg8PAnE3oDDoalnrVU/EVaKHYBWYL1DlRR7+3AWn0JiBqD8yKOfetVxJGdEtZ0tg==",
       "dependencies": [
         "@commitlint/is-ignored",
         "@commitlint/parse",
@@ -151,8 +152,8 @@
         "resolve-from@5.0.0"
       ]
     },
-    "@commitlint/rules@19.5.0": {
-      "integrity": "sha512-hDW5TPyf/h1/EufSHEKSp6Hs+YVsDMHazfJ2azIk9tHPXS6UqSz1dIRs1gpqS3eMXgtkT7JH6TW4IShdqOwhAw==",
+    "@commitlint/rules@19.6.0": {
+      "integrity": "sha512-1f2reW7lbrI0X0ozZMesS/WZxgPa4/wi56vFuJENBmed6mWq5KsheN/nxqnl/C23ioxpPO/PL6tXpiiFy5Bhjw==",
       "dependencies": [
         "@commitlint/ensure",
         "@commitlint/message",
@@ -283,8 +284,8 @@
         "undici-types"
       ]
     },
-    "@types/node@22.7.5": {
-      "integrity": "sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==",
+    "@types/node@22.9.1": {
+      "integrity": "sha512-p8Yy/8sw1caA8CdRIQBG5tiLHmxtQKObCijiAa9Ez+d4+PRffM4054xbju0msf+cvhJpnFEeNjxmVT/0ipktrg==",
       "dependencies": [
         "undici-types"
       ]
@@ -295,11 +296,18 @@
     "@types/react-dom@18.3.1": {
       "integrity": "sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==",
       "dependencies": [
-        "@types/react"
+        "@types/react@18.3.11"
       ]
     },
     "@types/react@18.3.11": {
       "integrity": "sha512-r6QZ069rFTjrEYgFdOck1gK7FLVsgJE7tTz0pQBczlBNUhBNk0MQH4UbnFSwjpQLMkLzgqvBBa+qGpLje16eTQ==",
+      "dependencies": [
+        "@types/prop-types",
+        "csstype"
+      ]
+    },
+    "@types/react@18.3.12": {
+      "integrity": "sha512-D2wOSq/d6Agt28q7rSI3jhU7G6aiuzljDGZ2hTZHIkrTLUI+AF3WMeKkEZ9nN2fkBAlcktT6vcZjDFiIhMYEQw==",
       "dependencies": [
         "@types/prop-types",
         "csstype"
@@ -917,8 +925,8 @@
     "human-signals@5.0.0": {
       "integrity": "sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ=="
     },
-    "husky@9.1.6": {
-      "integrity": "sha512-sqbjZKK7kf44hfdE94EoX8MZNk0n7HeW37O4YrVGCF4wzgQjp+akPAkfUK5LZ6KuR/6sqeAVuXHji+RzQgOn5A=="
+    "husky@9.1.7": {
+      "integrity": "sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA=="
     },
     "iconv-lite@0.4.24": {
       "integrity": "sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==",
@@ -1097,7 +1105,7 @@
         "micromatch",
         "pidtree",
         "string-argv",
-        "yaml@2.5.1"
+        "yaml"
       ]
     },
     "listr2@8.2.5": {
@@ -1382,6 +1390,9 @@
     "picocolors@1.1.0": {
       "integrity": "sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw=="
     },
+    "picocolors@1.1.1": {
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="
+    },
     "picomatch@2.3.1": {
       "integrity": "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="
     },
@@ -1394,34 +1405,34 @@
     "pirates@4.0.6": {
       "integrity": "sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg=="
     },
-    "postcss-import@15.1.0_postcss@8.4.47": {
+    "postcss-import@15.1.0_postcss@8.4.49": {
       "integrity": "sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==",
       "dependencies": [
-        "postcss@8.4.47",
+        "postcss@8.4.49",
         "postcss-value-parser",
         "read-cache",
         "resolve"
       ]
     },
-    "postcss-js@4.0.1_postcss@8.4.47": {
+    "postcss-js@4.0.1_postcss@8.4.49": {
       "integrity": "sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==",
       "dependencies": [
         "camelcase-css",
-        "postcss@8.4.47"
+        "postcss@8.4.49"
       ]
     },
-    "postcss-load-config@4.0.2_postcss@8.4.47": {
+    "postcss-load-config@4.0.2_postcss@8.4.49": {
       "integrity": "sha512-bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ==",
       "dependencies": [
         "lilconfig@3.1.2",
-        "postcss@8.4.47",
-        "yaml@2.6.0"
+        "postcss@8.4.49",
+        "yaml"
       ]
     },
-    "postcss-nested@6.2.0_postcss@8.4.47": {
+    "postcss-nested@6.2.0_postcss@8.4.49": {
       "integrity": "sha512-HQbt28KulC5AJzG+cZtj9kvKB93CFCdLvog1WFLf1D+xmMvPGlBstkpTEZfK5+AN9hfJocyBFCNiqyS48bpgzQ==",
       "dependencies": [
-        "postcss@8.4.47",
+        "postcss@8.4.49",
         "postcss-selector-parser"
       ]
     },
@@ -1439,15 +1450,15 @@
       "integrity": "sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==",
       "dependencies": [
         "nanoid",
-        "picocolors",
+        "picocolors@1.1.0",
         "source-map-js"
       ]
     },
-    "postcss@8.4.47": {
-      "integrity": "sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==",
+    "postcss@8.4.49": {
+      "integrity": "sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==",
       "dependencies": [
         "nanoid",
-        "picocolors",
+        "picocolors@1.1.1",
         "source-map-js"
       ]
     },
@@ -1691,8 +1702,8 @@
     "supports-preserve-symlinks-flag@1.0.0": {
       "integrity": "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w=="
     },
-    "tailwindcss@3.4.14_postcss@8.4.47": {
-      "integrity": "sha512-IcSvOcTRcUtQQ7ILQL5quRDg7Xs93PdJEk1ZLbhhvJc7uj/OAhYOnruEiwnGgBvUtaUAJ8/mhSw1o8L2jCiENA==",
+    "tailwindcss@3.4.15_postcss@8.4.49": {
+      "integrity": "sha512-r4MeXnfBmSOuKUWmXe6h2CcyfzJCEk4F0pptO5jlnYSIViUkVmsawj80N5h2lO3gwcmSb4n3PuN+e+GC1Guylw==",
       "dependencies": [
         "@alloc/quick-lru",
         "arg",
@@ -1707,8 +1718,8 @@
         "micromatch",
         "normalize-path",
         "object-hash",
-        "picocolors",
-        "postcss@8.4.47",
+        "picocolors@1.1.1",
+        "postcss@8.4.49",
         "postcss-import",
         "postcss-js",
         "postcss-load-config",
@@ -1829,9 +1840,6 @@
     "yaml@2.5.1": {
       "integrity": "sha512-bLQOjaX/ADgQ20isPJRvF0iRUHIxVhYvr53Of7wGcWlO2jvtUlH5m87DsmulFVxRpNLOnI4tB6p/oh8D7kpn9Q=="
     },
-    "yaml@2.6.0": {
-      "integrity": "sha512-a6ae//JvKDEra2kdi1qzCyrJW/WZCgFi8ydDV+eXExl95t+5R+ijnqHJbz9tmMh8FUjx3iv2fCQ4dclAQlO2UQ=="
-    },
     "yargs-parser@21.1.1": {
       "integrity": "sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw=="
     },
@@ -1854,21 +1862,21 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
-        "npm:@commitlint/cli@^19.4.0",
-        "npm:@commitlint/config-conventional@^19.2.2",
+        "npm:@commitlint/cli@^19.6.0",
+        "npm:@commitlint/config-conventional@^19.6.0",
         "npm:@commitlint/types@^19.5.0",
-        "npm:@types/node@^22.7.5",
+        "npm:@types/node@^22.9.1",
         "npm:@types/react-dom@^18.3.1",
-        "npm:@types/react@^18.3.11",
+        "npm:@types/react@^18.3.12",
         "npm:commitizen@^4.3.1",
         "npm:cz-conventional-changelog@^3.3.0",
-        "npm:husky@^9.1.6",
+        "npm:husky@^9.1.7",
         "npm:lint-staged@^15.2.10",
         "npm:next@14.2.15",
-        "npm:postcss@8",
+        "npm:postcss@^8.4.49",
         "npm:react-dom@18",
         "npm:react@18",
-        "npm:tailwindcss@^3.4.14",
+        "npm:tailwindcss@^3.4.15",
         "npm:typescript@^5.6.3"
       ]
     }
