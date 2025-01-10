@@ -2,31 +2,32 @@
   "name": "dsm23-deno-next-template",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "prepare": "deno run -A npm:husky",
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.15",
-    "react": "^18",
-    "react-dom": "^18"
+    "next": "15.1.4",
+    "react": "^19.0.0-rc.1",
+    "react-dom": "^19.0.0-rc.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.0",
+    "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@commitlint/types": "^19.5.0",
-    "@types/node": "^22.9.1",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/node": "^22.10.5",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.10",
+    "lint-staged": "^15.3.0",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.15",
-    "typescript": "^5.6.3"
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
   }
 }
