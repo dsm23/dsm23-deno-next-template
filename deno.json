@@ -1,6 +1,6 @@
 {
   "fmt": {
-    "exclude": [".next", "build", "node_modules", "pnpm-lock.yaml"]
+    "exclude": [".next", "build", "node_modules"]
   },
   "unstable": ["unsafe-proto"]
 }

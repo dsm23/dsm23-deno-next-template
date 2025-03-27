@@ -2,6 +2,7 @@
   "name": "dsm23-deno-next-template",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "prepare": "deno run -A npm:husky",
     "dev": "next dev --turbopack",
