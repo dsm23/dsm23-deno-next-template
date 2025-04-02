@@ -1,4 +1,4 @@
-name: Check
+name: Lint check
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  check:
+  lint:
     runs-on: ubuntu-24.04
     steps:
       - name: Harden Runner
@@ -23,6 +23,16 @@ jobs:
         with:
           persist-credentials: false
 
+      - uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
+        with:
+          # See here for caching with `deno` https://github.com/actions/cache/blob/main/examples.md#deno
+          path: .next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/deno.lock') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/deno.lock') }}-
+
       - name: Setup deno
         uses: denoland/setup-deno@909cc5acb0fdd60627fb858598759246509fa755 # v2.0.2
         with:
@@ -31,11 +41,5 @@ jobs:
       - name: Install dependencies
         run: deno install --frozen
 
-      - name: Format check
-        run: deno fmt --check
-
-      # - name: Lint check
-      #   run: deno lint
-
-      - name: Build
-        run: deno task build
+      - name: Lint check
+        run: deno lint
