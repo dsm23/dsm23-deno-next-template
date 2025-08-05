@@ -1,4 +1,4 @@
-# syntax=docker.io/docker/dockerfile:1@sha256:9857836c9ee4268391bb5b09f9f157f3c91bb15821bb77969642813b0d00518d
+# syntax=docker.io/docker/dockerfile:1@sha256:38387523653efa0039f8e1c89bb74a30504e76ee9f565e25c9a09841f9427b05
 
 FROM denoland/deno:alpine-2.3.3@sha256:3c5d95d6c5d7704b650a6667121780dc7a3e0ae59b1933468154157737929a31 AS base
 
