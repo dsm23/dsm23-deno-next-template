@@ -11,6 +11,15 @@
     ":enableVulnerabilityAlerts",
     ":pinAllExceptPeerDependencies"
   ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/(^|/|\\.)dvmrc$/"],
+      "depNameTemplate": "deno",
+      "datasourceTemplate": "npm",
+      "matchStrings": ["(?<currentValue>\\S+)\\s"]
+    }
+  ],
   "packageRules": [
     {
       "extends": ["packages:eslint"],
@@ -34,11 +43,10 @@
         "playwright",
         "@playwright/test",
         "mcr.microsoft.com/playwright"
-      ],
-      "matchUpdateTypes": ["digest", "patch", "minor", "major"]
+      ]
     }
   ],
-  "enabledManagers": ["dockerfile", "github-actions"],
+  "enabledManagers": ["dockerfile", "github-actions", "regex"],
   "patch": {
     "rebaseWhen": "behind-base-branch"
   },
