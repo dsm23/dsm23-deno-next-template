@@ -14,40 +14,27 @@
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": [
-        "/(^|/|\\.)dvmrc$/"
-      ],
+      "managerFilePatterns": ["/(^|/|\\.)dvmrc$/"],
       "depNameTemplate": "deno",
       "datasourceTemplate": "npm",
-      "matchStrings": [
-        "(?<currentValue>\\S+)\\s"
-      ]
+      "matchStrings": ["(?<currentValue>\\S+)\\s"]
     }
   ],
   "packageRules": [
     {
-      "extends": [
-        "packages:eslint"
-      ],
+      "extends": ["packages:eslint"],
       "groupName": "eslint packages"
     },
     {
       "groupName": "prettier packages",
-      "matchPackageNames": [
-        "prettier**",
-        "@ianvs/prettier-plugin-sort-imports"
-      ]
+      "matchPackageNames": ["prettier**", "@ianvs/prettier-plugin-sort-imports"]
     },
     {
-      "extends": [
-        "packages:react"
-      ],
+      "extends": ["packages:react"],
       "groupName": "react packages"
     },
     {
-      "extends": [
-        "packages:stylelint"
-      ],
+      "extends": ["packages:stylelint"],
       "groupName": "stylelint packages"
     },
     {
@@ -59,11 +46,7 @@
       ]
     }
   ],
-  "enabledManagers": [
-    "dockerfile",
-    "github-actions",
-    "custom.regex"
-  ],
+  "enabledManagers": ["dockerfile", "github-actions", "custom.regex"],
   "patch": {
     "rebaseWhen": "behind-base-branch"
   },
