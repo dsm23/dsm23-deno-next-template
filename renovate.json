@@ -44,6 +44,11 @@
         "@playwright/test",
         "mcr.microsoft.com/playwright"
       ]
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["denoland/deno"],
+      "versioning": "loose"
     }
   ],
   "enabledManagers": ["dockerfile", "github-actions", "custom.regex"],
