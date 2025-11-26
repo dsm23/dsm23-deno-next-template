@@ -1,5 +1,4 @@
 *
-!.husky/
 !public/
 !src/
 !deno.json
