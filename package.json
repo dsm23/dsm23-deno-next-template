@@ -4,9 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prepare": "deno run -A npm:husky",
     "dev": "next dev",
-    "build": "next build --webpack",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
