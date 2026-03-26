@@ -40,10 +40,6 @@
       "minimumReleaseAgeBehaviour": "timestamp-optional"
     },
     {
-      "extends": ["packages:eslint"],
-      "groupName": "eslint packages"
-    },
-    {
       "extends": ["packages:react"],
       "groupName": "react packages"
     },
