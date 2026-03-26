@@ -4,7 +4,7 @@ pre-commit:
     format:
       run: deno fmt --check {staged_files}
 
-    eslint:
+    lint:
       run: deno lint {staged_files}
       glob:
         - "*.ts"
