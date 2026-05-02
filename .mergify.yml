@@ -26,10 +26,10 @@ merge_protections:
     if:
       - base = main
     success_conditions:
-      - "title ~= ^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:\\(.+\\\
-        ))?:"
+      - "title ~= ^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:\\(.+\\))?:"
 
 merge_protections_settings:
+  auto_merge_conditions: true
   reporting_method: check-runs
   post_comment: true
 
@@ -38,7 +38,6 @@ merge_queue:
 
 queue_rules:
   - name: dep-update
-    autoqueue: true
     allow_queue_branch_edit: true
     batch_size: 5
     batch_max_wait_time: 5 min
