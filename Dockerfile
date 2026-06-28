@@ -1,6 +1,6 @@
 # syntax=docker.io/docker/dockerfile:1@sha256:87999aa3d42bdc6bea60565083ee17e86d1f3339802f543c0d03998580f9cb89
 
-FROM denoland/deno:alpine-2.8.3@sha256:9eb3b9b8bd4f821de57239792f76f6a3bef29a7bfbd486b801cbf34fc2c32797 AS base
+FROM denoland/deno:alpine-2.9.0@sha256:171790989a9d2397de0811c208da32597cff2624a5b3e675a5943cd6a01d4935 AS base
 
 # Install dependencies only when needed
 FROM base AS deps
